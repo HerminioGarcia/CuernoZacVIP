@@ -3,362 +3,376 @@
 	<Ventanas>
 		<Ventana Url="/Default.aspx?Id=0" Texto="Inicio" Id="0"></Ventana>
 		<Ventana Url="/Default.aspx?Id=1" Texto="Menu" Id="1"></Ventana>
-		<Ventana Url="/Default.aspx?Id=2" Texto="Juego" Id="2"></Ventana>
+		<Ventana Url="/Default.aspx?Id=2" Texto="Mapa" Id="2"></Ventana>
 		
 	</Ventanas>
 
 	<Promociones>
 		<Promocion Dia="Miércoles" NumPromos="1">
-			<Descripcion><![CDATA[Vampiros 3x2 (Solo Huitzila)]]></Descripcion>
+			<Descripcion><![CDATA[Vampiros 3x2 (Solo Huitzila Blanco)]]></Descripcion>
 			<Imagen>assets/img/PromoVampiro.jpeg</Imagen>
 		</Promocion>
-		<Promocion Dia="Jueves" NumPromos="2">
-			<Descripcion><![CDATA[Cubeta con 7 cervezas $220]]></Descripcion>
-			<Imagen>assets/img/PromoCubeta.jpeg</Imagen>
+		<Promocion Dia="Jueves" NumPromos="1">
+			<Descripcion><![CDATA[Promo Cubeta (7 cheves por $220)]]></Descripcion>
+			<Imagen>assets/img/CubetaVictoria.jpeg</Imagen>
 		</Promocion>
 		<Promocion Dia="Viernes" NumPromos="3">
 			<Descripcion><![CDATA[Coctelería 3x2 (No aplica en Perla Negra, Baileys y Cubanitos)]]></Descripcion>
 			<Imagen>assets/img/PromoCocteleria.jpeg</Imagen>
 		</Promocion>
-		<Promocion Dia="Sábado" NumPromos="4">
-			<Descripcion><![CDATA[Servicio Centenario Plata $750]]></Descripcion>
-			<Imagen>assets/img/PromoCentenarioPlata.jpeg</Imagen>
-		</Promocion>
 		<Promocion Dia="Domingo" NumPromos="5">
-			<Descripcion><![CDATA[León Rojo: Medio $40, Litro $80</Descripcion]]></Descripcion>
+			<Descripcion><![CDATA[León Rojo: $40]]></Descripcion>
 			<Imagen>assets/img/PromoLeonRojo.jpeg</Imagen>
 		</Promocion>
 	</Promociones>
 
 
 	<Bebidas>
-		<Tipo Nombre="Vampiros">
+		<Tipo Nombre="Vampiros" OpcionLogo="assets/img/VampiroLogo.jpg">
 			
-			<Vampiro Nombre="Huitzila Joven" Promo="SI" Dia="Miercoles" NumBebida="1">
+			<Bebida Nombre="Huitzila Joven" Promo="SI" Dia="Miercoles" NumBebida="1">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Huitzila Joven, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="50" Litro="100" Servicio="400" />
+				<Precio Medio="50" ></Precio>
 				<Imagen>assets/img/HutB.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Huitzila Blanco" Promo="SI" Dia="Miercoles" NumBebida="2">
+			<Bebida Nombre="Huitzila Blanco" Promo="SI" Dia="Miercoles" NumBebida="2">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Huitzila Blanco, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="400" />
+				<Precio Medio="55"/>
 				<Imagen>assets/img/HutJ.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Zacatecano Joven" NumBebida="3">
+			<Bebida Nombre="Zacatecano Joven" NumBebida="3">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Zacatecano Joven, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="60" Litro="120" Servicio="400" />
+				<Precio Medio="60"  />
 				<Imagen>assets/img/ZacJ.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Zacatecano Blanco" NumBebida="4">
+			<Bebida Nombre="Zacatecano Blanco" NumBebida="4">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Zacatecano Blanco, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="60" Litro="120" Servicio="400" />
+				<Precio Medio="60" />
 				<Imagen>assets/img/ZacatB.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Azul Centenario" NumBebida="5">
+			<Bebida Nombre="Azul Centenario" NumBebida="5">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Azul Centenario, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="70" Litro="140" Servicio="600" />
+				<Precio Medio="70"  />
 				<Imagen>assets/img/AzulCen.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Cuervo Especial" NumBebida="6">
+			<Bebida Nombre="Cuervo Especial" NumBebida="6">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Cuervo Especial, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="70" Litro="140" Servicio="600" />
+				<Precio Medio="70" />
 				<Imagen>assets/img/CuervoE.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Sauza Hacienda" NumBebida="7">
+			<Bebida Nombre="Sauza Hacienda" NumBebida="7">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Sauza Hacienda, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="70" Litro="140" Servicio="600" />
+				<Precio Medio="70"  />
 				<Imagen>assets/img/SauzaHacienda.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Orendain" NumBebida="8">
+			<Bebida Nombre="Orendain" NumBebida="8">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Orendain, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="70" Litro="140" Servicio="600" />
+				<Precio Medio="70"  />
 				<Imagen>assets/img/Orendain.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Jimador" NumBebida="9">
+			<Bebida Nombre="Jimador" NumBebida="9">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Jimador, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="75" Litro="150" Servicio="700" />
+				<Precio Medio="75"  />
 				<Imagen>assets/img/Jimador.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Centenario Reposado" NumBebida="10">
+			<Bebida Nombre="Centenario Reposado" NumBebida="10">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Centenario Reposado, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="75" Litro="150" Servicio="850" />
+				<Precio Medio="75"  />
 				<Imagen>assets/img/CentenarioReposado.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Centenario Plata" NumBebida="11">
+			<Bebida Nombre="Centenario Plata" NumBebida="11">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Centenario Plata, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="75" Litro="150" Servicio="850" />
+				<Precio Medio="75"  />
 				<Imagen>assets/img/CentenarioPlata.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Tradicional" NumBebida="12">
+			<Bebida Nombre="Tradicional" NumBebida="12">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Tradicional, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="80" Litro="160" Servicio="850" />
+				<Precio Medio="80" />
 				<Imagen>assets/img/Tradicional.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Hornitos" NumBebida="13">
+			<Bebida Nombre="Hornitos" NumBebida="13">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Hornitos, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="80" Litro="160" Servicio="850" />
+				<Precio Medio="80" />
 				<Imagen>assets/img/Hornitos.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Antiguo Herradura" NumBebida="14">
+			<Bebida Nombre="Antiguo Herradura" NumBebida="14">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Antiguo Herradura, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="90" Litro="180" Servicio="900" />
+				<Precio Medio="90" />
 				<Imagen>assets/img/AntiguoHerradura.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="1800 Reposado" NumBebida="15">
+			<Bebida Nombre="1800 Reposado" NumBebida="15">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, 1800 Reposado, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="110" Litro="220" Servicio="1100" />
+				<Precio Medio="110" />
 				<Imagen>assets/img/1800Reposado.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Herradura Reposado" NumBebida="16" >
+			<Bebida Nombre="Herradura Reposado" NumBebida="16" >
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Herradura Reposado, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="115" Litro="230" Servicio="1300" />
+				<Precio Medio="115"  />
 				<Imagen>assets/img/HerraduraReposado.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Don Julio Reposado" NumBebida="17" >
+			<Bebida Nombre="Don Julio Reposado" NumBebida="17" >
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Don Julio Reposado, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="115" Litro="230" Servicio="1300" />
+				<Precio Medio="115" />
 				<Imagen>assets/img/DonJulioReposado.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="1800 Cristalino" NumBebida="18" >
+			<Bebida Nombre="1800 Cristalino" NumBebida="18" >
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, 1800 Cristalino, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="145" Litro="290" Servicio="1750" />
+				<Precio Medio="145" />
 				<Imagen>assets/img/1800Cristalino.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
-			<Vampiro Nombre="Don Julio 70" NumBebida="19">
+			<Bebida Nombre="Don Julio 70" NumBebida="19">
 				<Descripcion><![CDATA[ Hielo, Salsa Buffalo, Limon, Don Julio 70, Sangria, Squirt ]]></Descripcion>
-				<Precio Medio="160" Litro="320" Servicio="2000" />
+				<Precio Medio="160"  />
 				<Imagen>assets/img/DonJulio70.jpeg</Imagen>
-			</Vampiro>
+			</Bebida>
 
 		</Tipo>
 
-		<Tipo Nombre="Coctelerias" Promo="SI" Dia="Viernes">
-			<Cocteleria Nombre="Cubanito" NumBebida="1">
+		<Tipo Nombre="Coctelerias" OpcionLogo="assets/img/cocteleriaLogo.jpg" >
+			<Bebida Nombre="Cubanito" NumBebida="1">
 				<Descripcion><![CDATA[ Hielo, volt, sptrite, Agua mineral, Arriero y Fanta ]]></Descripcion>
-				<Precio Medio="50" Litro="100"/>
+				<Precio Medio="50"/>
 				<Imagen>assets/img/Cubanito.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Conejo" NumBebida="2">
+			<Bebida Nombre="Conejo" NumBebida="2" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Hitzila Joven, Salsa buffalo, Jugo mage y Squirt ]]></Descripcion>
-				<Precio Medio="50" Litro="100"/>
+				<Precio Medio="50" />
 				<Imagen>assets/img/Conejo.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Remo"	NumBebida="3">
+			<Bebida Nombre="Remo" NumBebida="3" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodka, Bacardi blanco, Bacardi añejo, Precidente, Licor de café, Rompope, Torres v, Leche clavel y Agua mineral ]]></Descripcion>
-				<Precio Medio="85" Litro="170"/>
+				<Precio Medio="85" />
 				<Imagen>assets/img/Remo.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Azul" NumBebida="4" >
+			<Bebida Nombre="Azul" NumBebida="4" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodka, Volt y Agua mineral ]]></Descripcion>
-				<Precio Medio="70" Litro="140"/>
+				<Precio Medio="70" />
 				<Imagen>assets/img/Azul.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Piña colada" NumBebida="5">
+			<Bebida Nombre="Piña colada" NumBebida="5" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Crema de coco, Jugo de piña, Leche clavel y Vodka ]]></Descripcion>
-				<Precio Medio="80" Litro="160"/>
+				<Precio Medio="80" />
 				<Imagen>assets/img/PiñaColada.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Perla negra" NumBebida="6">
+			<Bebida Nombre="Perla negra" NumBebida="6">
 				<Descripcion><![CDATA[ Jagger, volt, agua mineral ]]></Descripcion>
-				<Precio Medio="120" Litro="240"/>
+				<Precio Medio="120" />
 				<Imagen>assets/img/PerlaNegra.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Baileys" NumBebida="7">
+			<Bebida Nombre="Baileys" NumBebida="7">
 				<Descripcion><![CDATA[ Baileys en las rocas o Frape con Leche clabel ]]></Descripcion>
-				<Precio Medio="85" Litro="170"/>
+				<Precio Medio="85" />
 				<Imagen>assets/img/Baileys.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Bloody Marry" NumBebida="8">
+			<Bebida Nombre="Bloody Marry" NumBebida="8" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodka, Limon, Salsa, Clamato ]]></Descripcion>
-				<Precio Medio="75" Litro="150"/>
+				<Precio Medio="75" />
 				<Imagen>assets/img/BloodyMarry.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Morado" NumBebida="9">
+			<Bebida Nombre="Morado" NumBebida="9" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodka, volt, agua mineral, granadina roja ]]></Descripcion>
-				<Precio Medio="70" Litro="140"/>
+				<Precio Medio="70" />
 				<Imagen>assets/img/Morado.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Ruso blanco" NumBebida="10">
+			<Bebida Nombre="Ruso blanco" NumBebida="10" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodka, Leche clavel, Rompope, Agua mineral ]]></Descripcion>
-				<Precio Medio="55" Litro="110"/>
+				<Precio Medio="55" />
 				<Imagen>assets/img/RusoBlanco.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Coco Beach" NumBebida="11">
+			<Bebida Nombre="Coco Beach" NumBebida="11" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Vodca, Malibu, Crema de coco ]]></Descripcion>
-				<Precio Medio="80" Litro="160"/>
+				<Precio Medio="80" />
 				<Imagen>assets/img/CocoBeach.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Escoces sucio" NumBebida="12">
+			<Bebida Nombre="Escoces sucio" NumBebida="12" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ williams, Agua mineral, Leche clavel ]]></Descripcion>
-				<Precio Medio="55" Litro="110"/>
+				<Precio Medio="55" />
 				<Imagen>assets/img/EscocesSucio.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
-			<Cocteleria Nombre="Hulk" NumBebida="14">
+			<Bebida Nombre="Hulk" NumBebida="13" Promo="SI" Dia="Viernes">
 				<Descripcion><![CDATA[ Torres x, Agua mineral, Volt ]]></Descripcion>
-				<Precio Medio="90" Litro="180"/>
+				<Precio Medio="90" />
 				<Imagen>assets/img/Hulk.jpeg</Imagen>
-			</Cocteleria>
+			</Bebida>
 
 		</Tipo>
 
-		<Tipo Nombre="Destilados" NumBebida="1">
-			<Destilado Nombre="Bacardí blanco">
+		<Tipo Nombre="Destilados" NumBebida="1" OpcionLogo="assets/img/DestiladosLogo.jpg">
+			<Bebida Nombre="Bacardí blanco">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="600" />
+				<Precio Medio="55"  />
 				<Imagen>assets/img/BacardiBlanco.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Bacardí Añejo" NumBebida="2">
+			<Bebida Nombre="Bacardí Añejo" NumBebida="2">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="600" />
-				<Imagen>assets/img/BacardiAñejo.jpeg</Imagen>
-			</Destilado>
+				<Precio Medio="55"  />
+				<Imagen>assets/img/BA.jpeg</Imagen>
+			</Bebida>
 
-			<Destilado Nombre="Capitan morgan" NumBebida="3">
+			<Bebida Nombre="Capitan morgan" NumBebida="3">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="600" />
+				<Precio Medio="55"  />
 				<Imagen>assets/img/CapitanMorgan.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="William Lawsons" NumBebida="4">
+			<Bebida Nombre="William Lawsons" NumBebida="4">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="650" />
+				<Precio Medio="55"  />
 				<Imagen>assets/img/WilliamLawsons.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Passport" NumBebida="5">
+			<Bebida Nombre="Passport" NumBebida="5">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="55" Litro="110" Servicio="650" />
+				<Precio Medio="55"  />
 				<Imagen>assets/img/Passport.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Red Leabel" NumBebida="6">
+			<Bebida Nombre="Red Leabel" NumBebida="6">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="75" Litro="150" Servicio="800" />
+				<Precio Medio="75" />
 				<Imagen>assets/img/RedLeabel.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Black Leabel" NumBebida="7">
+			<Bebida Nombre="Black Leabel" NumBebida="7">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="125" Litro="250" Servicio="1450" />
+				<Precio Medio="125"  />
 				<Imagen>assets/img/BlackLeabel.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Torres 5" NumBebida="8">
+			<Bebida Nombre="Torres 5" NumBebida="8">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="70" Litro="140" Servicio="700" />
+				<Precio Medio="70"  />
 				<Imagen>assets/img/Torres5.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Torres 10" NumBebida="9">
+			<Bebida Nombre="Torres 10" NumBebida="9">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="80" Litro="160" Servicio="850" />
+				<Precio Medio="80"  />
 				<Imagen>assets/img/Torres10.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 
-			<Destilado Nombre="Jagger" NumBebida="10">
+			<Bebida Nombre="Jagger" NumBebida="10">
 				<Descripcion><![CDATA[ Pidelo a tu gusto ]]></Descripcion>
-				<Precio Medio="120" Litro="240" Servicio="1100" />
+				<Precio Medio="120" />
 				<Imagen>assets/img/Jagger.jpeg</Imagen>
-			</Destilado>
+			</Bebida>
 		</Tipo>
 
-		<Tipo Nombre="Cervezas">
-			<Cerveza Nombre="Corona" NumBebida="1">
-				<Precio Chico="35" Grande="95"/>
+		<Tipo Nombre="Cervezas" OpcionLogo="assets/img/cervezaLogo.jpg" >
+			<Bebida Nombre="Corona" NumBebida="1">
+				<Precio Medio="35" />
 				<Imagen>assets/img/Corona.jpeg</Imagen>
-			</Cerveza>
+				<Descripcion><![CDATA[ Una Corona ]]></Descripcion>
+			</Bebida>
 
-			<Cerveza Nombre="Victoria" NumBebida="2">
-				<Precio Chico="35" Grande="95"/>
+			<Bebida Nombre="Victoria" NumBebida="2">
+				<Precio Medio="35" />
 				<Imagen>assets/img/Victoria.jpeg</Imagen>
-			</Cerveza>
+				<Descripcion><![CDATA[ Una victoria ]]></Descripcion>
+			</Bebida>
 
-			<Cerveza Nombre="Leon Rojo (Preparacion + cerveza)" Promo="SI" Dia="Domingo" NumBebida="3">
-				<Precio Chico="50" Grande="100"/>
+			<Bebida Nombre="Leon Rojo (Preparacion + cerveza)" Promo="SI" Dia="Domingo" NumBebida="3">
+				<Precio Medio="50" />
 				<Imagen>assets/img/LeonRojo.jpeg</Imagen>
-			</Cerveza>
+				<Descripcion><![CDATA[ (Preparacion + cerveza) ]]></Descripcion>
+			</Bebida>
 
-			<Cerveza Nombre="Michelada (Preparacion + cerveza)" Promo="SI" Dia="Domingo" NumBebida="4">
-				<Precio Chico="50" Grande="100"/>
+			<Bebida Nombre="Michelada" Promo="SI" Dia="Domingo" NumBebida="4">
+				<Precio Medio="50" />
 				<Imagen>assets/img/Michelada.jpeg</Imagen>
-			</Cerveza>
+				<Descripcion><![CDATA[ (Preparacion + cerveza) ]]></Descripcion>
+			</Bebida>
 		</Tipo>
 
-		<Tipo Nombre="Cubetas">
-			<Cubeta Nombre="Cubeta de Corona" Promo="SI" Dia="Jueves" NumBebida="1">
-				<Precio Precio="210" Precio_Promo="220"/>
+		<Tipo Nombre="Cubetas" OpcionLogo="assets/img/cubetaLogo.jpg">
+			<Bebida Nombre="Cubeta de Corona" Promo="SI" Dia="Jueves" NumBebida="1">
+				<Precio Medio="210" />
 				<Imagen>assets/img/CubetaCorona.jpeg</Imagen>
-			</Cubeta>
+				<Descripcion><![CDATA[ Cubeta de 6 Coronas ]]></Descripcion>
+			</Bebida>
 
-			<Cubeta Nombre="Cubeta de Victoria" Promo="SI" Dia="Jueves" NumBebida="2">
-				<Precio Precio="210" Precio_Promo="220"/>
+			<Bebida Nombre="Cubeta de Victoria" Promo="SI" Dia="Jueves" NumBebida="2">
+				<Precio Medio="210" />
 				<Imagen>assets/img/CubetaVictoria.jpeg</Imagen>
-			</Cubeta>
+				<Descripcion><![CDATA[ Cubeta de 6 Victorias ]]></Descripcion>
+			</Bebida>
 		</Tipo>
 
-		<Tipo Nombre="Refrescos">
-			<Cubeta Nombre="Agua Mineral 296 m.l." NumBebida="1">
-				<Precio Precio="25"/>
+		<Tipo Nombre="Refrescos" OpcionLogo="assets/img/SinAlcohol.jpg">
+			<Bebida Nombre="Agua Mineral" NumBebida="1">
+				<Precio Medio="25"/>
 				<Imagen>assets/img/AguaMineral296.jpeg</Imagen>
-			</Cubeta>
-			<Cubeta Nombre="Squirt 355 m.l." NumBebida="2">
-				<Precio Precio="30"/>
+				<Descripcion><![CDATA[ Agua Mineral 296 m.l. ]]></Descripcion>
+			</Bebida>
+			<Bebida Nombre="Squirt" NumBebida="2">
+				<Precio Medio="30"/>
 				<Imagen>assets/img/Squirt355.jpeg</Imagen>
-			</Cubeta>
-			<Cubeta Nombre="CocaCola 600 m.l." NumBebida="3">
-				<Precio Precio="40"/>
+				<Descripcion><![CDATA[ Squirt 355 m.l. ]]></Descripcion>
+			</Bebida>
+			<Bebida Nombre="CocaCola" NumBebida="3">
+				<Precio Medio="40"/>
 				<Imagen>assets/img/CocaCola600.jpeg</Imagen>
-			</Cubeta>
-			<Cubeta Nombre="Volt 400 m.l." NumBebida="4">
-				<Precio Precio="35"/>
+				<Descripcion><![CDATA[ CocaCola 600 m.l. ]]></Descripcion>
+			</Bebida>
+			<Bebida Nombre="Volt" NumBebida="4">
+				<Precio Medio="35"/>
 				<Imagen>assets/img/Volt400.jpeg</Imagen>
-			</Cubeta>
+				<Descripcion><![CDATA[ Volt 400 m.l. ]]></Descripcion>
+			</Bebida>
 		</Tipo>
 	</Bebidas>
 
 	<Datos>
-		<NombreRestaurant>Cuerno Vip</NombreRestaurant>
-		<Descripcion>Bienvenidos a Coffee Station, donde podras encontrar un excelente servicio y calidad</Descripcion>
-		<Direccion>M. Flores #516 Col. San felipe Hueyotlipan CP.72489</Direccion>
-		<Telefono>2211205394</Telefono>
-		<correo>contacto@coffestation.com</correo>
-		<Imagen>/img/Fachada.jpg</Imagen>
+		<NombreRestaurant>Terraza Cuerno</NombreRestaurant>
+		<Direccion>Av. García Salinas 313 Altos, Guadalupe, Mexico, 98608</Direccion>
+		<Telefono>+52 1 493 949 7937</Telefono>
+		<correo>35165885@uaz.edu.mx</correo>
+		<facebook>https://www.facebook.com/profile.php?id=100092848716321</facebook>
 		<Horarios>
-			<Horario>De Lunes a Jueves: 08:00 a 20:00</Horario>
-			<Horario>Viernes y Sabados: 08:00 a 22:00</Horario>
-			<Horario>Domingos: 08:00 a 16:00</Horario>
+			<Dias>De Miercoles a Domingo</Dias>
+			<Horario>04:00 pm a 02:00 am</Horario>
 		</Horarios>
 	</Datos>
+
+	<Eventos>
+		<Evento Nombre="Aniversario" Portada="assets/img/LeonRojo.jpeg">
+			<Fecha>23/09/2024</Fecha>
+			<Video>assets/Video/SSJ4.mp4</Video>
+			<Descripcion>Ven a festejar el aniversario del bar cuerno de oro, donde nuestra historia se remota asta fresnillo</Descripcion>
+			<Audio>assets/Audio/papa.mp3</Audio>
+		</Evento>
+	</Eventos>
+
 
 </CuernoVip>

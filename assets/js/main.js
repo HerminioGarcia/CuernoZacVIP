@@ -1,3 +1,4 @@
+console.log("Archivo main.js cargado correctamente");
 (function ($) {
     "use strict";
 
@@ -116,4 +117,3 @@
     });
     
 })(jQuery);
-

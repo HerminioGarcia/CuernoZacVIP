@@ -9,6 +9,10 @@
     font-family: 'Pacifico', cursive;
 }
 
+body {
+    background-color: #f0f0f0; /* Cambia el color de fondo para ver si se aplica */
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -25,7 +29,6 @@
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -39,7 +42,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -79,7 +81,6 @@
     font-weight: normal;
     border-radius: 2px;
 }
-
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -149,7 +150,6 @@
     }
 }
 
-
 /*** Hero Header ***/
 .hero-header {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
@@ -171,7 +171,6 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
-
 
 /*** Section Title ***/
 .section-title {
@@ -206,7 +205,6 @@
     display: none;
 }
 
-
 /*** Service ***/
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -225,14 +223,12 @@
     color: var(--light) !important;
 }
 
-
 /*** Food Menu ***/
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
 
-
-/*** Youtube Video ***/
+/*** Video ***/
 .video {
     position: relative;
     height: 100%;
@@ -259,53 +255,12 @@
     padding: 18px 20px 18px 28px;
 }
 
-.video .btn-play:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: var(--primary);
-    border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-.video .btn-play:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: var(--primary);
-    border-radius: 50%;
-    transition: all 200ms;
-}
-
 .video .btn-play img {
     position: relative;
     z-index: 3;
     max-width: 100%;
     width: auto;
     height: auto;
-}
-
-.video .btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    border-left: 32px solid var(--dark);
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
 }
 
 @keyframes pulse-border {
@@ -349,7 +304,6 @@
     opacity: 1;
 }
 
-
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -372,7 +326,6 @@
 .team-item .btn {
     border-radius: 38px 38px 0 0;
 }
-
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
@@ -411,7 +364,6 @@
     background: var(--primary);
     border-color: var(--primary);
 }
-
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -483,4 +435,133 @@
 .menu-logo {
     width: 40px;
     height: 40px;
+}
+
+#trash {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+#trash:hover {
+    background-color: #f5c6cb;
+    cursor: pointer;
+}
+
+/* Estilo general para las promociones */
+.testimonial-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre las promociones */
+.testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen dentro de las promociones */
+.testimonial-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texto del día de la promoción */
+.testimonial-item h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción de la promoción */
+.testimonial-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Estilo especial para la promoción del día */
+.testimonial-item.hoy {
+    border: 3px solid #ff0000; /* Borde rojo para resaltar */
+    background-color: #fff5f5; /* Fondo ligeramente rosado */
+}
+
+/* Título adicional para destacar la promoción del día */
+.testimonial-item.hoy h3 {
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+/* Efecto suave al resaltar la promo del día */
+.testimonial-item.hoy {
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+/* General Styles */
+.media-container {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Video Styles */
+#Video {
+    position: relative; /* Permite posicionar el video de forma absoluta dentro */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+#Video video {
+    width: 100%; /* Hace que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    display: block; /* Elimina el espacio debajo del video */
+    max-height: 500px; /* Limita la altura máxima si es necesario */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Efecto al pasar el mouse */
+}
+
+#Video video:hover {
+    transform: scale(1.02); /* Efecto al pasar el mouse */
+}
+
+/* Audio Styles */
+.media-poster {
+    display: block;
+    border-bottom: 5px solid var(--primary);
+    transition: opacity 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.media-poster:hover {
+    opacity: 0.8;
+}
+
+.audio-player {
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles */
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
 }
