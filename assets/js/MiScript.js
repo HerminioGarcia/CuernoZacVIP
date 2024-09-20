@@ -69,16 +69,24 @@ function dropTrash(ev) {
         console.error("El elemento no se encuentra en el carrito");
     }
 }
+function mostrar(icono, titulo, mensaje) {
+    Swal.fire({
+        title: titulo,
+        text: mensaje,
+        icon: icono,
+    });
+}
 
 function finalizePurchase() {
     const now = new Date();
     const currentHour = now.getHours();
 
     if (currentHour >= 16 || currentHour < 3) {
-        alert("Compra verificada, gracias por tu compra!");
+        
+        mostrar("success", "Compra verificada", `gracias por tu compra!`);
         resetCart();
     } else {
-        alert("No se puede realizar la compra fuera del horario de 4:00 PM a 3:00 AM.");
+        mostrar("success", "No se puede realizar la compraa", `Fuera del horario de 4:00 PM a 3:00 AM!`);
     }
 }
 

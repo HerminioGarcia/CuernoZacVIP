@@ -16,6 +16,7 @@
 				<meta content="" name="keywords"/>
 				<meta content="" name="description"/>
 				<script src="assets/js/MiScript.js" type="text/javascript"></script>
+				<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 				<!-- Favicon -->
 				<link href="assets/img/favicon.ico" rel="icon"/>
